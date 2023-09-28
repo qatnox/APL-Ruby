@@ -2,6 +2,7 @@
 
 class HouseDirector
   def construct(builder)
+    builder.build_foundation
     builder.build_walls
     builder.build_doors
     builder.build_windows

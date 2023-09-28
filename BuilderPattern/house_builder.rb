@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 class HouseBuilder
+
+  def build_foundation
+    raise NotImplementedError, "#{self.class} did not define the method 'build_foundation'"
+  end
+
   def build_walls
     raise NotImplementedError, "#{self.class} did not define the method 'build_walls'"
   end

@@ -7,6 +7,10 @@ class ConcreteHouseBuilder < HouseBuilder
     @house = House.new
   end
 
+  def build_foundation
+    @house.foundation = 'Concrete Foundation'
+  end
+
   def build_walls
     @house.walls << 'Brick Wall' << 'Brick Wall' << 'Brick Wall' << 'Brick Wall'
   end

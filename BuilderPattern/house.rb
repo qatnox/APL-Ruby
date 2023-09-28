@@ -4,9 +4,10 @@ require_relative 'concrete_house_builder'
 require_relative 'house_director'
 
 class House
-  attr_accessor :walls, :doors, :windows, :roof
+  attr_accessor :foundation, :walls, :doors, :windows, :roof
 
   def initialize
+    @foundation = nil
     @walls = []
     @doors = []
     @windows = []
@@ -14,7 +15,8 @@ class House
   end
 
   def to_s
-    result = "House Elements:\n"
+    result = "House Elements:\n\n"
+    result += "Foundation: #{@foundation}\n"
     result += "Walls: #{@walls}\n"
     result += "Doors: #{@doors}\n"
     result += "Windows: #{@windows}\n"
