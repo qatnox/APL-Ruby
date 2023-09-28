@@ -14,7 +14,7 @@ class House
   end
 
   def to_s
-    result = "House Components:\n"
+    result = "House Elements:\n"
     result += "Walls: #{@walls}\n"
     result += "Doors: #{@doors}\n"
     result += "Windows: #{@windows}\n"
