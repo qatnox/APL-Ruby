@@ -23,7 +23,7 @@ def find_cake_slices(cake)
       end
     end
   else
-    slice_width, slice_height = slice_height, slice_width
+    slice_width, _ = slice_height, slice_width
     cake = cake.transpose
     slice = []
     raisins_found = 0
@@ -57,9 +57,9 @@ rows.times do
 end
 
 result = find_cake_slices(cake_input)
-puts "\nPossible solutions:"
+puts "\nPossible solution:"
 result.each_with_index do |slice, index|
-  puts "Solution №#{index + 1}:"
+  puts "Piece of cake №#{index + 1}:"
   display_cake(slice)
   puts "\n"
 end
