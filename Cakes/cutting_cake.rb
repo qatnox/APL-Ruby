@@ -47,7 +47,7 @@ def display_cake(cake)
   cake.each { |row| puts row }
 end
 
-puts "Enter the 'size'of the cake:"
+puts "Enter the 'size' of the cake:"
 rows = gets.chomp.to_i
 
 puts "Enter your cake:"
