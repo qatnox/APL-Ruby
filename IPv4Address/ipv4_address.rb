@@ -3,7 +3,7 @@ def valid_address(address)
 
   ipv4_pattern = /^(25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}$/
 
-  return !!(address =~ ipv4_pattern)
+  !!(address =~ ipv4_pattern)
 end
 
 # Gets the address as an argument from the command line
