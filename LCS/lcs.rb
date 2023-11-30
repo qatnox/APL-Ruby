@@ -24,3 +24,12 @@ def longest_common_subsequence(text1, text2)
   # Returns the result stored in the hash
   return answer["#{size_text1 - 1},#{size_text2 - 1}"].to_i
 end
+
+puts "Enter the 1st string:"
+text1 = gets.chomp
+
+puts "Enter the 2nd string:"
+text2 = gets.chomp
+
+result = longest_common_subsequence(text1, text2)
+puts "The length of the longest common subsequence is #{result}"
