@@ -55,4 +55,3 @@ class BinaryTree
     postorder_recursive(node.left) + postorder_recursive(node.right) + [node.value]
   end
 end
-

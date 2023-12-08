@@ -1,7 +1,7 @@
 require_relative 'binary_tree'
 
 def input_numbers
-  puts "Enter numbers separated by spaces:"
+  puts "Enter numbers (separated by spaces):"
   numbers = gets.chomp.split.map(&:to_i)
   numbers
 end
@@ -25,7 +25,7 @@ traversal_result = case traversal_type
                    when :postorder
                      tree.postorder
                    else
-                     raise "Invalid traversal type"
+                     raise "Inсorrect traversal type!"
                    end
 
-puts "#{traversal_type.to_s.capitalize} Traversal: #{traversal_result.join(', ')}"
+puts "<#{traversal_type.to_s.capitalize}> traversal: #{traversal_result.join(', ')}"
